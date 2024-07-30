@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom"
 const Login = () => {
     return (
         <div>
@@ -14,8 +14,9 @@ const Login = () => {
                         <label htmlFor=""className="absolute text-sm duration-300 transform -translate scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">Ingrese Contraseña</label>
                     </div>
                     <button type="submit" className="w-full mb-4 text-[18px] mt-6 rounded bg-blue-500 py-2 hover:bg-blue-600 transition-colors duration-300 ">INGRESAR</button>
-                    <button type="submit" className="w-full mb-4 text-[18px] mt-6 rounded bg-blue-500 py-2 hover:bg-blue-600 transition-colors duration-300 ">REGISTRARSE</button>
-                    
+                    <div>
+                        <span>Registrate <Link to='/Register'>aqui</Link></span>
+                    </div>
                 </form>
 
             </div>
